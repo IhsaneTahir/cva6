@@ -68,17 +68,33 @@
      - ``bit``
      - Floating Point
 
+   * - ``RVZFH``
+     - ``bit``
+     - Full standard Zfh half-precision floating-point extension. Requires ``RVF``.
+
+   * - ``RVZFBFMIN``
+     - ``bit``
+     - Standard scalar BFloat16 conversions (Zfbfmin). Requires ``RVZFH`` or the transitional ``XF16`` alias.
+
+   * - ``XCVBF16``
+     - ``bit``
+     - Custom scalar BFloat16 arithmetic and conversions. Requires ``RVZFBFMIN``.
+
+   * - ``XCVF8``
+     - ``bit``
+     - Custom scalar FP8 arithmetic, conversions, moves, and load/store. Requires ``RVF``.
+
    * - ``XF16``
      - ``bit``
-     - Non standard 16bits Floating Point extension
+     - Deprecated transition-release alias for ``RVZFH``. It continues to control the existing vector behavior.
 
    * - ``XF16ALT``
      - ``bit``
-     - Non standard 16bits Floating Point Alt extension
+     - Legacy BFloat16-like encoding in the standard OP-FP space. Deprecated; use ``RVZFBFMIN`` and ``XCVBF16``.
 
    * - ``XF8``
      - ``bit``
-     - Non standard 8bits Floating Point extension
+     - Non standard 8bits Floating Point extension. Deprecated; use ``XCVF8``.
 
    * - ``XFVec``
      - ``bit``

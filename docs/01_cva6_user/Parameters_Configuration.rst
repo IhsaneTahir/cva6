@@ -1,5 +1,5 @@
 ﻿..
-   Copyright (c) 2023 OpenHW Group
+   Copyright (c) 2026 OpenHW Foundation
    Copyright (c) 2023 Thales DIS design services SAS
 
    SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
@@ -33,7 +33,7 @@ Parameters
 
 - ``SuperscalarEn``:
 
-   - Not compatible with floating point (``RVF``, ``RVD``, ``XF16``, ``XF16ALT``, ``XF8``, ``XFVec``) yet.
+   - Not compatible with floating point (``RVF``, ``RVD``, ``RVZFH``, ``RVZFBFMIN``, ``XCVBF16``, ``XCVF8``, ``XF16``, ``XF16ALT``, ``XF8``, ``XFVec``) yet.
    - Not compatible with macro instructions (``RVZCMP``) yet.
    - Recommended to set ``NrScoreboardEntries`` to at least 8 for performance.
 

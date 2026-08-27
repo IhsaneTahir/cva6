@@ -1,5 +1,5 @@
 ﻿..
-   Copyright (c) 2023 OpenHW Group
+   Copyright (c) 2026 OpenHW Foundation
    Copyright (c) 2023 Thales DIS design services SAS
 
    SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
@@ -40,6 +40,8 @@ In the next pages, the ISA (Instruction Set Architecture) for various CVA6 confi
 * RVZicsr      – Standard Extension for CSR Instructions
 * RVZifencei   – Standard Extension for Instruction-Fetch Fence
 * RVZicond     – Standard Extension for Integer Conditional Operations
+* RVZfh        – Standard Extension for Half-Precision Floating-Point (RV32 and RV64)
+* RVZfbfmin    – Standard Extension for Scalar BFloat16 Conversion (RV32 and RV64)
 
 The base RISC-V ISA (RV32I or RV64I) has fixed-length 32-bit instructions or 16-bit instructions, so that must be naturally aligned on 2-byte boundary.
 If 16-bit instructions are not implemented (RVC, RVZcb, RVZcmp), then instructions must be naturally aligned on 4-byte boundary.

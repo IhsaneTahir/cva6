@@ -1,5 +1,5 @@
 ﻿..
-   Copyright (c) 2023 OpenHW Group
+   Copyright (c) 2026 OpenHW Foundation
    Copyright (c) 2023 Thales DIS design services SAS
 
    SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
@@ -49,6 +49,10 @@ Some of them are optional and are enabled through parameters in the SystemVerilo
    "Zkn - NIST Algorithm Suite (comprised of Zbkb, Zbkc, Zbkx, Zkne, Zknd and Zknh)", "Yes", "✔", "✔", "Note 1"
    "D - Double precision floating-point",                                             "Yes", "",  "✔", "Note 1"
    "F - Single precision floating-point",                                             "Yes", "✔", "✔", "Note 1"
+   "Zfh - Half precision floating-point. Requires F.",                                "Yes", "✔", "✔", "Note 2"
+   "Zfbfmin - Scalar BFloat16 conversion. Requires Zfh.",                             "Yes", "✔", "✔", "Note 2"
+   "Xcvbf16 - Custom scalar BFloat16 arithmetic and conversion. Requires Zfbfmin.",   "Yes", "✔", "✔", "Note 2"
+   "Xcvf8 - Custom scalar FP8 arithmetic, conversion, move and load/store. Requires F.", "Yes", "✔", "✔", "Note 2"
    "M - Integer Multiply/Divide",                                                     "No",  "✔", "✔", "Note 1"
    "Zicount - Performance Counters",                                                  "Yes", "✔", "✔", "Note 2"
    "Zicsr - Control and Status Register Instructions",                                "No",  "✔", "✔", "Note 2"
@@ -82,6 +86,10 @@ These extensions are available in CV32A60AX:
    "Zkn - NIST Algorithm Suite",                                            ""
    "RV32D - Double precision floating-point",                               ""
    "RV32F - Single precision floating-point",                               ""
+   "RVZfh - Half precision floating-point (Zfh)",                           ""
+   "RVZfbfmin - Scalar BFloat16 conversion (Zfbfmin)",                      ""
+   "Xcvbf16 - Custom scalar BFloat16 arithmetic and conversion",            ""
+   "Xcvf8 - Custom scalar FP8 arithmetic, conversion, move and load/store", ""
    "RV32M - Integer Multiply/Divide",                                       "✔"
    "RVZicount - Performance Counters",                                      "✔"
    "RVZicsr - Control and Status Register Instructions",                    "✔"
@@ -108,6 +116,10 @@ These extensions are available in CV32A60X:
    "Zkn - NIST Algorithm Suite",                                            ""
    "RV32D - Double precision floating-point",                               ""
    "RV32F - Single precision floating-point",                               ""
+   "RVZfh - Half precision floating-point (Zfh)",                           ""
+   "RVZfbfmin - Scalar BFloat16 conversion (Zfbfmin)",                      ""
+   "Xcvbf16 - Custom scalar BFloat16 arithmetic and conversion",            ""
+   "Xcvf8 - Custom scalar FP8 arithmetic, conversion, move and load/store", ""
    "RV32M - Integer Multiply/Divide",                                       "✔"
    "RVZicount - Performance Counters",                                      ""
    "RVZicsr - Control and Status Register Instructions",                    "✔"
@@ -115,7 +127,7 @@ These extensions are available in CV32A60X:
    "RVZicond - Integer Conditional Operations(Ratification pending)",       ""
 
 CV64A6_MMU extensions
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 These extensions are available in CV64A6_MMU:
 
@@ -134,6 +146,10 @@ These extensions are available in CV64A6_MMU:
    "Zkn - NIST Algorithm Suite",                                            ""
    "RV32D - Double precision floating-point",                               ""
    "RV32F - Single precision floating-point",                               ""
+   "RVZfh - Half precision floating-point (Zfh)",                           ""
+   "RVZfbfmin - Scalar BFloat16 conversion (Zfbfmin)",                      ""
+   "Xcvbf16 - Custom scalar BFloat16 arithmetic and conversion",            ""
+   "Xcvf8 - Custom scalar FP8 arithmetic, conversion, move and load/store", ""
    "RV32M - Integer Multiply/Divide",                                       "✔"
    "RVZicount - Performance Counters",                                      ""
    "RVZicsr - Control and Status Register Instructions",                    "✔"
